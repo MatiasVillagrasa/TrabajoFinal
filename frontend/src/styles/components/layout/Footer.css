@@ -1,0 +1,19 @@
+.DatosContacto{
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 16px;
+  padding-top: 7em;
+}
+
+.DatosContacto p{
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 4px;
+  margin-inline-start: 1em;
+  margin-inline-end: 0px;
+}
+
+.copyright{
+  padding-top: 6em;
+}

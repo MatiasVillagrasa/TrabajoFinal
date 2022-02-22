@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #ffffff;
+  background-repeat:no-repeat;
+  background: linear-gradient(270deg,#ffffff 0%, #8c8c8c 80%);
+  background: -webkit-linear-gradient(270deg,#ffffff 0%, #8c8c8c 80%);
+  background: -moz-linear-gradient(270deg,#ffffff 0%, #8c8c8c 80%);
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+}

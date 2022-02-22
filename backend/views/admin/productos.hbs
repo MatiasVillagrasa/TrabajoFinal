@@ -1,0 +1,42 @@
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <p>Bienvenido {{usuario}} <a class="btn btn-danger" href="/admin/login/logout">Salir <i
+                    class="fas fa-sign-out-alt"></i></a></p>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <h3>Listado de Productos</h3>
+        </div>
+        <div class="col-5 text-end">
+            <a class="btn btn-success" href="/admin/productos/agregar"><i class="fa fa-plus" aria-hidden="true"> Nuevo</i></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col" class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each productos}}
+                    <tr>
+                        <td class="d-none"><input type="hidden" value="{{id}}" name="img_original"/></td>
+                        <td>{{nombre}}</td>
+                        <td>{{descripcion}}</td>
+                        <td>{{{imagen}}}</td>
+                        <td class="text-end">
+                            <a class="btn btn-secondary" href="/admin/productos/modificar/{{id}}"><i class="fas fa-pencil-alt" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href="/admin/productos/eliminar/{{id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

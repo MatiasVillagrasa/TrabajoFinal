@@ -1,0 +1,43 @@
+.mProductos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.tarjetas{
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta{
+  width: 35%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+
+.tarjeta h1{
+  font-size: 26px;
+}
+
+.tarjeta p{
+  font-size: 18px;
+  margin: 0px;
+  line-height: 22px;
+  font-weight: 200;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  text-align: justify;
+}
